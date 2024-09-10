@@ -107,7 +107,7 @@ function CreateArticle(obj, searchBlock) {
   createSection.innerHTML = `
             <div class='demoImg'>
                 <a href='${obj.url}' target='_blanck'>
-                    <img src='./img/${obj.category}/${obj.img}' alt='${obj.name}' />
+                    <img src='img/${obj.category}/${obj.img}' alt='${obj.name}' />
                 </a>
             </div> 
             <h3>&nbsp;${obj.name}</h3>`;
