@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 28px;
+    color: #FCB941;
+    text-decoration: underline;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #bbf352;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #2dad3e;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: block;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#hero {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url('img/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-text {
+    z-index: 2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#about,
+#projects,
+#contact {
+    padding: 30px 20px;
+}
+
+/* Паралакс-ефект для секцій */
+#about,
+#projects,
+#contact {
+    position: relative;
+    z-index: 2;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Стилі для about секції */
+#about {  
+    background: url('img/about-background.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+#about::before {
+    content: "";
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        /* Напівпрозорий чорний фон (0.5 - рівень затемнення) */
+        z-index: 1;
+        /* Щоб затемнення було поверх фону */
+}
+
+#about h2,
+#about p,
+.about-card h2,
+.circle-diagram {
+    position: relative;
+    z-index: 2;
+    /* Щоб текст та діаграма були поверх затемнення */
+}
+.about-card {
+    /* background: white; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.circle-diagram {
+    position: relative;
+    max-width: 350px;
+    /* height: 250px; */
+    margin: 0 auto;
+}
+
+.circular-chart {
+    width: 100%;
+    height: auto;
+    /* Щоб початок був зверху */
+}
+
+.circle-html,
+.circle-css,
+.circle-js,
+.circle-react,
+.circle-node,
+.circle-mysql,
+.circle-git,
+.circle-docker,
+.circle-figma,
+.circle-photoshop {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.circle-html {
+    stroke: #E44D26;
+    /* HTML color */
+}
+
+.circle-css {
+    stroke: #264DE4;
+    /* CSS color */
+}
+
+.circle-js {
+    stroke: #F0DB4F;
+    /* JavaScript color */
+}
+
+.circle-react {
+    stroke: #61DBFB;
+    /* React color */
+}
+
+.circle-node {
+    stroke: #8CC84B;
+    /* Node.js color */
+}
+
+.circle-mysql {
+    stroke: #00758F;
+    /* MySQL color */
+}
+
+.circle-git {
+    stroke: #b7f12f;
+    /* Git color */
+}
+
+.circle-docker {
+    stroke: #2496ED;
+    /* Docker color */
+}
+
+.circle-figma {
+    stroke: #F24E1E;
+    /* Figma color */
+}
+
+.circle-photoshop {
+    stroke: #003A70;
+    /* Photoshop color */
+}
+
+/* Аватар у центрі діаграми */
+image {
+    border-radius: 50%;
+    
+}
+
+/* Стилі для лейблів */
+.labels {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.label .color {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+
+/* Портфоліо  */
+.category {
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-card {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.category .project-card {
+    width: 320px;
+    margin: 5px;
+    padding: 5px;
+    /* background: #074354; */
+}
+
+.category .project-card .demoImg {
+    width: 300px;
+    height: 208px;
+    margin: 5px;
+    border: #fff 4px solid;
+}
+
+.category .project-card .demoImg:hover {
+    border: #FCB941 4px solid;
+    cursor: pointer;
+}
+
+.category .project-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+ #contact {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Kalam", cursive;
+    font-size: 20px;
+    /* background-color: #011930; */
+    background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }

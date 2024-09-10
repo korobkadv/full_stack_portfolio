@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Portfolio: Korobka Dmytro</title>
+    <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <canvas id="three-canvas"></canvas>
+        <div class="hero-text">
+            <h2>Welcome to My Portfolio!</h2>
+            <p>Web Developer | Full Stack</p>
+        </div>
+    </section>
+
+<section id="about">
+ <h2>About Me:</h2>
+ <p>&nbsp;Stack development with technologies like HTML, CSS, JavaScript, React.JS, and Node.JS. Throughout my learning
+experience, I developed several projects. Beyond the coursework, I
+proactively tackled smaller projects on my own, which deepened my understanding of core development principles—from
+debugging intricate code to managing databases effectively.
+</p>
+<br>
+<p>&nbsp;I am passionate about continuously honing my skills, staying updated with the latest industry trends, and applying my
+knowledge to new and exciting projects. My commitment to learning and growth drives me to seek opportunities where I can
+contribute and further evolve as a well-rounded Full Stack developer.</p>
+    <div class="about-card">
+        <div class="circle-diagram">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+                <defs>
+                    <clipPath id="avatarClip">
+                        <circle cx="18" cy="18" r="12" />
+                    </clipPath>
+                </defs>
+
+<!-- Технологічні сегменти -->
+<path class="circle-html" stroke-dasharray="20, 100"
+    d="M18 2.0845a 15.9155 15.9155 0 1 1 0 31.831 15.9155 15.9155 0 1 1 0-31.831" />
+<path class="circle-js" stroke-dasharray="25, 100" stroke-dashoffset="-20"
+    d="M18 2.0845a 15.9155 15.9155 0 1 1 0 31.831 15.9155 15.9155 0 1 1 0-31.831" />
+<path class="circle-react" stroke-dasharray="15, 100" stroke-dashoffset="-45"
+    d="M18 2.0845a 15.9155 15.9155 0 1 1 0 31.831 15.9155 15.9155 0 1 1 0-31.831" />
+<path class="circle-node" stroke-dasharray="10, 100" stroke-dashoffset="-60"
+    d="M18 2.0845a 15.9155 15.9155 0 1 1 0 31.831 15.9155 15.9155 0 1 1 0-31.831" />
+<path class="circle-mysql" stroke-dasharray="10, 100" stroke-dashoffset="-70"
+    d="M18 2.0845a 15.9155 15.9155 0 1 1 0 31.831 15.9155 15.9155 0 1 1 0-31.831" />
+<path class="circle-git" stroke-dasharray="10, 100" stroke-dashoffset="-80"
+    d="M18 2.0845a 15.9155 15.9155 0 1 1 0 31.831 15.9155 15.9155 0 1 1 0-31.831" />
+<path class="circle-photoshop" stroke-dasharray="10, 100" stroke-dashoffset="-90"
+    d="M18 2.0845a 15.9155 15.9155 0 1 1 0 31.831 15.9155 15.9155 0 1 1 0-31.831" />
+<!-- Аватар у центрі -->
+                <image x="6" y="6" width="25" height="25" href="img/avatar.jpg" clip-path="url(#avatarClip)" />
+            </svg>
+            <div class="labels">
+                <div class="label">
+                    <span class="color" style="background-color: #E44D26;"></span> HTML, CSS, SASS
+                </div>
+                <div class="label">
+                    <span class="color" style="background-color: #F0DB4F;"></span> JavaScript
+                </div>
+                <div class="label">
+                    <span class="color" style="background-color: #61DBFB;"></span> React.JS
+                </div>
+                <div class="label">
+                    <span class="color" style="background-color: #8CC84B;"></span> Node.JS
+                </div>
+                <div class="label">
+                    <span class="color" style="background-color: #00758F;"></span> MySQL, MongoDB
+                </div>
+                <div class="label">
+                    <span class="color" style="background-color: #b7f12f;"></span> Git
+                </div>
+                <div class="label">
+                    <span class="color" style="background-color: #003A70;"></span>Figma, Photoshop
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="projects">
+    </section>
+
+    <section id="contact">
+        <h1>console.log( 'Hello World!' );</h1>
+        <p>initialize contact:
+            <a href='https://www.linkedin.com/in/dmytro-korobka-196639106/' target='_blanck'>LinkedIn</a> |
+            <a href='https://github.com/korobkadv' target='_blanck'>GitHub</a> |
+            <a href='https://t.me/korobka_dv' target='_blanck'>Telegram</a> |
+            <a href='https://www.work.ua/jobseeker/my/resumes/view/?id=9551815' target='_blanck'>Work.ua</a> 
+        </p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
