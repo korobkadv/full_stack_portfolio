@@ -33,7 +33,11 @@ const materials = [
 ];
 
 // Функція для створення куба з врахуванням 60% від висоти вікна
-function createCube(cubeWidth = 3, cubeHeight = 3) {
+function createCube(cubeWidth = 4, cubeHeight = 4) {
+  if (window.innerWidth <= 500) {
+    cubeHeight = 3;
+    cubeWidth = 3;
+  }
   const geometry = new THREE.BoxGeometry(cubeWidth, cubeHeight, cubeWidth); // Пропорційний куб
   const cube = new THREE.Mesh(geometry, materials);
   return cube;
